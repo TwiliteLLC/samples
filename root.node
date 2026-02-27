@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-02-27T18:55:23.547Z",
-    "modified": "2026-02-27T19:20:03.700Z",
+    "created": "2026-02-27T19:52:43.174Z",
+    "modified": "2026-02-27T20:32:17.726Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -106,8 +106,9 @@
             "branch": "main",
             "autoCreateRepo": true,
             "repoVisibility": "private",
-            "seedLandingPage": true,
-            "enableGithubPages": false
+            "seedOnCommit": false,
+            "enableGithubPages": false,
+            "seedLandingPage": true
           },
           "autoSave": false
         }
