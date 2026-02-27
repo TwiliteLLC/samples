@@ -3,44 +3,42 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-02-27T17:22:52.779Z",
-    "modified": "2026-02-27T17:39:49.284Z",
+    "created": "2026-02-27T05:50:48.312Z",
+    "modified": "2026-02-27T18:06:49.102Z",
     "author": "",
-    "tags": [],
-    "preferredViewer": "https://twilite.zone"
+    "tags": []
   },
   "nodes": [
     {
-      "id": "cde23d9e-b46d-4955-aa69-6954f419dc5c",
+      "id": "1f73d010-dbd6-47b8-b5c8-569f543d3c83",
       "type": "manifest",
       "label": "Manifest",
       "position": {
-        "x": -260,
-        "y": -160
+        "x": -560,
+        "y": -260
       },
-      "width": 360,
-      "height": 220,
+      "width": 440,
+      "height": 300,
       "visible": true,
       "showLabel": true,
       "data": {
         "identity": {
-          "graphId": "f7d0e854-1478-48d3-83d1-0ff37b24e79f",
-          "name": "Untitled Graph",
+          "graphId": "agent-ops-compounding-system",
+          "name": "Agent Ops: Compounding System",
           "version": "0.1.0",
-          "description": "",
-          "createdAt": "2026-02-27T17:27:20.654Z",
-          "updatedAt": "2026-02-27T17:27:20.654Z"
+          "description": "A compounding operating system for coding agents: plan-by-default, subagents, lessons loop, verify, elegance, autonomous bugfixing.",
+          "createdAt": "2026-02-27T00:00:00.000Z",
+          "updatedAt": "2026-02-27T00:00:00.000Z"
         },
         "intent": {
-          "kind": "graph",
-          "scope": "mixed"
+          "kind": "template",
+          "scope": "agents"
         },
         "dependencies": {
           "nodeTypes": [
             "manifest",
             "legend",
             "dictionary",
-            "default",
             "markdown"
           ],
           "portContracts": [
@@ -102,64 +100,72 @@
             }
           },
           "github": {
-            "repo": "TwiliteLLC/samples",
-            "path": "compounding-agents.node",
-            "branch": "main",
-            "autoCreateRepo": true,
-            "repoVisibility": "private",
-            "seedLandingPage": true,
-            "enableGithubPages": false
+            "repo": "",
+            "path": "",
+            "branch": "main"
           },
           "autoSave": false
-        },
-        "isRoot": false,
-        "root": false
+        }
       }
     },
     {
-      "id": "637bd393-76a8-4882-93f3-b6d3ceef3f63",
+      "id": "0bb8ff5a-6447-4fca-87bb-4ec8a82ca9ec",
       "type": "legend",
       "label": "Legend",
       "position": {
-        "x": 140,
-        "y": 100
+        "x": -560,
+        "y": 60
       },
-      "width": 340,
-      "height": 220,
+      "width": 380,
+      "height": 240,
       "visible": true,
       "showLabel": true,
       "data": {
         "entries": [
           {
-            "key": "default",
-            "intent": "placeholder",
-            "implementation": "default renderer",
-            "dictionaryKey": "default"
+            "key": "doctrine",
+            "intent": "agent-operating-system",
+            "implementation": "markdown node",
+            "dictionaryKey": "markdown"
+          },
+          {
+            "key": "rules",
+            "intent": "behavioral-rules",
+            "implementation": "markdown node",
+            "dictionaryKey": "markdown"
+          },
+          {
+            "key": "loop",
+            "intent": "self-improvement-loop",
+            "implementation": "markdown node",
+            "dictionaryKey": "markdown"
+          },
+          {
+            "key": "drop-in",
+            "intent": "portable-file-template",
+            "implementation": "markdown node",
+            "dictionaryKey": "markdown"
           }
         ],
-        "markdown": "## Legend\\n- default: placeholder",
-        "isRoot": false,
-        "root": false
+        "markdown": "This graph captures an agent operating system as composable rules + a compounding lessons loop."
       }
     },
     {
-      "id": "ef9e1956-5334-4b6c-99b1-7a49d9fa0f78",
+      "id": "f677c140-0fb3-4fe5-91f0-450efc020828",
       "type": "dictionary",
       "label": "Dictionary",
       "position": {
-        "x": -260,
-        "y": 100
+        "x": -560,
+        "y": 340
       },
-      "width": 320,
+      "width": 380,
       "height": 220,
       "visible": true,
       "showLabel": true,
       "data": {
         "nodeDefs": [],
         "skills": [],
-        "views": [],
-        "isRoot": false,
-        "root": false
+        "views": []
       }
     },
     {
@@ -216,8 +222,7 @@
         "memo": "",
         "link": "",
         "html": "",
-        "svg": "",
-        "isRoot": true
+        "svg": ""
       }
     },
     {
@@ -274,9 +279,7 @@
         "memo": "",
         "link": "",
         "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
+        "svg": ""
       }
     },
     {
@@ -333,9 +336,7 @@
         "memo": "",
         "link": "",
         "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
+        "svg": ""
       }
     },
     {
@@ -392,13 +393,102 @@
         "memo": "",
         "link": "",
         "html": "",
-        "svg": "",
-        "isRoot": false,
-        "root": false
+        "svg": ""
       }
     }
   ],
   "edges": [
+    {
+      "id": "b1a3d2c4-5e6f-4a1b-8c2d-3e4f5a6b7c8d",
+      "type": "relates",
+      "source": "1f73d010-dbd6-47b8-b5c8-569f543d3c83",
+      "target": "0bb8ff5a-6447-4fca-87bb-4ec8a82ca9ec",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "portMeta": {
+        "source": {
+          "key": "root",
+          "label": "root",
+          "type": "value",
+          "direction": "output"
+        },
+        "target": {
+          "key": "root",
+          "label": "root",
+          "type": "value",
+          "direction": "output"
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "c2d3e4f5-6a7b-4c8d-9e0f-1a2b3c4d5e6f",
+      "type": "relates",
+      "source": "1f73d010-dbd6-47b8-b5c8-569f543d3c83",
+      "target": "f677c140-0fb3-4fe5-91f0-450efc020828",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "portMeta": {
+        "source": {
+          "key": "root",
+          "label": "root",
+          "type": "value",
+          "direction": "output"
+        },
+        "target": {
+          "key": "root",
+          "label": "root",
+          "type": "value",
+          "direction": "output"
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "d4e5f6a7-8b9c-4d0e-8f1a-2b3c4d5e6f70",
+      "type": "relates",
+      "source": "1f73d010-dbd6-47b8-b5c8-569f543d3c83",
+      "target": "4f8b6e3a-2a44-4c1b-8d2d-9b1cfe2f7a15",
+      "sourcePort": "root",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "root",
+          "label": "root",
+          "type": "value",
+          "direction": "output"
+        },
+        "target": {
+          "key": "in",
+          "label": "In",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
     {
       "id": "e6f7a8b9-0c1d-4e2f-8a3b-4c5d6e7f8091",
       "type": "relates",
