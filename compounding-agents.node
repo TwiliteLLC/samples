@@ -1,0 +1,516 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "title": "Untitled Project",
+    "description": "",
+    "created": "2026-02-27T17:22:52.779Z",
+    "modified": "2026-02-27T17:39:49.284Z",
+    "author": "",
+    "tags": [],
+    "preferredViewer": "https://twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "cde23d9e-b46d-4955-aa69-6954f419dc5c",
+      "type": "manifest",
+      "label": "Manifest",
+      "position": {
+        "x": -260,
+        "y": -160
+      },
+      "width": 360,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "f7d0e854-1478-48d3-83d1-0ff37b24e79f",
+          "name": "Untitled Graph",
+          "version": "0.1.0",
+          "description": "",
+          "createdAt": "2026-02-27T17:27:20.654Z",
+          "updatedAt": "2026-02-27T17:27:20.654Z"
+        },
+        "intent": {
+          "kind": "graph",
+          "scope": "mixed"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "manifest",
+            "legend",
+            "dictionary",
+            "default",
+            "markdown"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "skills": [],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "document": {
+          "url": ""
+        },
+        "settings": {
+          "theme": null,
+          "backgroundImage": null,
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
+          "snapToGrid": false,
+          "gridSize": 20,
+          "edgeRouting": "auto",
+          "layout": {
+            "mode": "autoOnMissingPositions",
+            "defaultLayout": "layered",
+            "direction": "DOWN",
+            "edgeLaneGapPx": 10,
+            "serpentine": {
+              "maxPerRow": 6
+            },
+            "cycleFallback": {
+              "enabled": true
+            },
+            "elk": {
+              "algorithm": "fixed",
+              "edgeRouting": "ORTHOGONAL",
+              "portConstraints": "FIXED_SIDE",
+              "nodeSpacing": 120,
+              "layeredEdgeSpacing": 80
+            }
+          },
+          "github": {
+            "repo": "TwiliteLLC/samples",
+            "path": "compounding-agents.node",
+            "branch": "main",
+            "autoCreateRepo": true,
+            "repoVisibility": "private",
+            "seedLandingPage": true,
+            "enableGithubPages": false
+          },
+          "autoSave": false
+        },
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "637bd393-76a8-4882-93f3-b6d3ceef3f63",
+      "type": "legend",
+      "label": "Legend",
+      "position": {
+        "x": 140,
+        "y": 100
+      },
+      "width": 340,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "entries": [
+          {
+            "key": "default",
+            "intent": "placeholder",
+            "implementation": "default renderer",
+            "dictionaryKey": "default"
+          }
+        ],
+        "markdown": "## Legend\\n- default: placeholder",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "ef9e1956-5334-4b6c-99b1-7a49d9fa0f78",
+      "type": "dictionary",
+      "label": "Dictionary",
+      "position": {
+        "x": -260,
+        "y": 100
+      },
+      "width": 320,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "nodeDefs": [],
+        "skills": [],
+        "views": [],
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "4f8b6e3a-2a44-4c1b-8d2d-9b1cfe2f7a15",
+      "type": "markdown",
+      "label": "Doctrine",
+      "position": {
+        "x": -39.41703380287231,
+        "y": -257.668135211489
+      },
+      "width": 620,
+      "height": 210,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "In",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "Out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "In",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "Out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Compounding Agent System\n\nThis is an operating system for a coding agent.\n\n**Core idea:** every correction becomes a rule. Over time, mistake rate drops because the agent captures patterns, reviews them, and verifies work before calling it done.\n\nUse this as a **drop-in policy** for day-to-day coding agent workflows.",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": "",
+        "isRoot": true
+      }
+    },
+    {
+      "id": "9c2e1f7a-7a3e-4e6a-8b62-1f0f8a4c6d21",
+      "type": "markdown",
+      "label": "Rules (1–6)",
+      "position": {
+        "x": -40,
+        "y": -20
+      },
+      "width": 620,
+      "height": 460,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "In",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "Out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "In",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "Out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Rules\n\n## 1) Plan mode by default\nEnter plan mode for any task with 3+ steps or architectural decisions. If something goes sideways, stop and re-plan immediately. Write detailed specs upfront to reduce ambiguity.\n\n## 2) Use subagents liberally\nOffload research, exploration, and parallel analysis to subagents. Keep the main context clean. One task per subagent.\n\n## 3) Build a self-improvement loop\nAfter any correction, update a lessons file with the pattern. Write rules that prevent the same mistake. Ruthlessly iterate until mistake rates drop. Review at the start of every session.\n\n## 4) Verify before marking done\nNever mark a task complete without proving it works. Diff behavior between main and changes. Run tests, check logs, demonstrate correctness.\n\n## 5) Demand elegance, but stay balanced\nFor non-trivial changes, pause and ask if there's a more elegant way. If a fix feels hacky, implement the elegant solution. Skip this for obvious fixes.\n\n## 6) Fix bugs autonomously\nWhen given a bug report, just fix it. Point at logs, errors, failing tests and resolve them. Fix failing CI without being told how.",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": "",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "2a0c8f3b-1d55-4c6a-8f0a-0c9b6a5f2d7b",
+      "type": "markdown",
+      "label": "Lessons Loop",
+      "position": {
+        "x": -40,
+        "y": 480
+      },
+      "width": 620,
+      "height": 260,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "In",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "Out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "In",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "Out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Compounding Loop\n\n**Trigger:** any correction or bug found.\n\n**Action:** append a lesson entry describing:\n- Symptom\n- Root cause\n- Preventative rule\n- Test/verification step\n\n**Review cadence:** read lessons at the start of each session.\n\n**Goal:** reduce repeated mistakes by converting failures into durable policy.",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": "",
+        "isRoot": false,
+        "root": false
+      }
+    },
+    {
+      "id": "7c1f2b9a-8e4c-4d14-8d67-9c2f1a6b3d8e",
+      "type": "markdown",
+      "label": "Drop-in File Template",
+      "position": {
+        "x": 620,
+        "y": -20
+      },
+      "width": 560,
+      "height": 760,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "In",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "Out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "In",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "Out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# agent-policy.md (drop-in)\n\n## Principles\n- Plan mode by default for 3+ step tasks\n- Use subagents for parallel research/exploration\n- Maintain a compounding lessons loop\n- Verify before marking done\n- Prefer elegant solutions when complexity warrants it\n- Fix bugs autonomously using logs/tests/CI\n\n## Required Behaviors\n1. If task complexity ≥ 3 steps: write a plan first.\n2. If uncertainty or failure: stop and re-plan.\n3. After any correction: write a lessons entry.\n4. Before done: run tests, check logs, prove behavior.\n\n## Lessons File\n- Path: `LESSONS.md`\n- Format:\n  - Date\n  - Issue\n  - Root cause\n  - Rule added/updated\n  - Verification method\n\n## Optional Speed Booster\n- Pair with voice dictation for richer context throughput.",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": "",
+        "isRoot": false,
+        "root": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e6f7a8b9-0c1d-4e2f-8a3b-4c5d6e7f8091",
+      "type": "relates",
+      "source": "4f8b6e3a-2a44-4c1b-8d2d-9b1cfe2f7a15",
+      "target": "9c2e1f7a-7a3e-4e6a-8b62-1f0f8a4c6d21",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "Out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "In",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "f0a1b2c3-d4e5-4f06-8a17-28394a5b6c7d",
+      "type": "relates",
+      "source": "9c2e1f7a-7a3e-4e6a-8b62-1f0f8a4c6d21",
+      "target": "2a0c8f3b-1d55-4c6a-8f0a-0c9b6a5f2d7b",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "Out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "In",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "0a1b2c3d-4e5f-4a6b-8c7d-8e9f0a1b2c3d",
+      "type": "relates",
+      "source": "2a0c8f3b-1d55-4c6a-8f0a-0c9b6a5f2d7b",
+      "target": "7c1f2b9a-8e4c-4d14-8d67-9c2f1a6b3d8e",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "Out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "In",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    }
+  ],
+  "clusters": [],
+  "scripts": []
+}
